@@ -1,12 +1,12 @@
 'use strict';
-var https = require('https');
-//var response = require('response');
+let https = require('https');
+
 const URL = 'https://api.darksky.net/forecast/';
 const API_KEY = 'd29ce109cbad64110d6b699821303197';
 const LONGITUDE = '6.4980';
 const LATITUDE =  '3.3439';
 https.get(URL+ API_KEY + "/"+LONGITUDE+","+LATITUDE, function(response){
-    var info = "";
+    let info = "";
     response.on("data", function(chunk){
       info += chunk;
 });
@@ -15,7 +15,7 @@ response.on("end", function(){
   if (response.statusCode === 200){
     try{
           // parsing the string in json object
-          var data = JSON.parse(info);
+          let data = JSON.parse(info);
           console.log("The Weather is "+ data.currently.summary+" in "+data.timezone);
           console.log("The daily summary is "+ data.daily.summary);
         }catch(error){
