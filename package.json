@@ -1,0 +1,27 @@
+{
+  "name": "command-line-app",
+  "version": "1.0.0",
+  "description": "A simple commandline app for consuming json data",
+  "main": "app.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ludralph/AndelaBootCampDayTwo.git"
+  },
+  "keywords": [
+    "node",
+    "API",
+    "http",
+    "js"
+  ],
+  "author": "Raphael",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ludralph/AndelaBootCampDayTwo/issues"
+  },
+  "homepage": "https://github.com/ludralph/AndelaBootCampDayTwo#readme"
+}
